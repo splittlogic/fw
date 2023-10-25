@@ -1,0 +1,39 @@
+{
+    "name": "splittlogic/fw",
+    "description": "Framework package for Laravel: Livewire 3.0.10, Bootstrap 5.3.2",
+    "keywords": [
+        "splittlogic",
+        "laravel",
+        "framework",
+        "livewire",
+        "bootstrap"
+    ],
+    "homepage": "https://github.com/splittlogic/fw",
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "SplittLogic",
+            "email": "splittlogic@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "livewire/livewire": "3.0.10"
+    },
+    "autoload": {
+        "psr-4": {
+            "splittlogic\\fw\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "splittlogic\\fw\\fwServiceProvider"
+            ],
+            "aliases": {
+                "fw": "splittlogic\\fw\\Facades\\fw"
+            }
+        }
+    }
+}
