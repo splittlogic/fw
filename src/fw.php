@@ -6,5 +6,6 @@ class fw
 {
 
     use Traits\resources;
+    use Traits\tag;
 
 }
